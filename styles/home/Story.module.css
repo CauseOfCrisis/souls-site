@@ -1,0 +1,116 @@
+.container {
+    padding: 0 10%;
+}
+
+.header {
+    text-align: center;
+    font-size: 4rem;
+    margin: 0 0 5rem 0;
+}
+
+.chapter {
+    width: min(100%, 1200px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 10rem;
+}
+
+.content {
+    width: min(100%, 900px);
+}
+
+.chapter h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.honorary {
+    position: relative;
+    width: 10rem;
+    aspect-ratio: 1/2;
+    border-radius: 10px;
+}
+
+.honoraryImg {
+    position: absolute;
+    left: -50%;
+    width: 200%;
+}
+
+.shotInTheDark .content, .journey .content {
+    padding-right: 2rem;
+}
+
+.dutyCalls .content {
+    padding-left: 2rem;
+}
+
+.shotInTheDark {
+    
+}
+
+.shotInTheDark h3 {
+    text-decoration-color: var(--quarterchap-theme);
+}
+
+.shotInTheDark .honorary {
+    background-color: var(--quarterchap-theme);
+    margin-left: 2rem;
+}
+
+.dutyCalls {
+
+}
+
+.dutyCalls h3 {
+    text-decoration-color: var(--chath-theme);
+}
+
+.dutyCalls .honorary {
+    background-color: var(--chath-theme);
+}
+
+.journey {
+
+}
+
+.journey h3 {
+    text-decoration-color: var(--minnow-theme);
+}
+
+.journey .honorary {
+    background-color: var(--minnow-theme);
+}
+
+@media screen and (max-width: 750px) {
+    .chapter {
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0;
+        margin: 0 0 5rem
+    }
+    .dutyCalls {
+        flex-direction: column;
+    }
+    .chapter h3 {
+        text-align: center;
+    }
+    .honorary {
+        aspect-ratio: 1;
+    }
+    .honoraryImg {
+        position: static;
+        width: 100%;
+    }
+    .content {
+        padding: 0;
+    }
+}
+
+.krillin {
+    width: min(200px, 100%);
+    padding: 0;
+    margin: auto;
+}

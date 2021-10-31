@@ -1,0 +1,10 @@
+.container {
+    display: grid;
+    gap: 1.2em;
+    grid-template-columns: repeat(2, auto);
+}
+
+.container svg {
+ width: 1.7em;
+ height: 1.7em;
+}

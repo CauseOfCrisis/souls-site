@@ -1,0 +1,41 @@
+.container {
+    margin: 5rem 10% 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headingWrapper {
+    position: relative;
+    margin: 0 0 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.heading {
+    font-size: 2.8rem;
+    margin: 0;
+    text-decoration: underline;
+    text-decoration-color: rgb(252, 75, 75);
+}
+
+.icon {
+    position: absolute;
+    width: 8rem;
+    height: fit-content;
+    right: -60%;
+}
+
+.content {
+    width: min(100%, 950px);
+    text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+    .icon {
+        right: 0;
+        left: 0;
+        margin: auto;
+        bottom: -130%;
+    }
+}

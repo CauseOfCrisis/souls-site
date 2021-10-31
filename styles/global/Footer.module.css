@@ -1,0 +1,19 @@
+.container {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container * {
+    margin: 0 5px 0;
+}
+
+.twitter * {
+  fill: hsl(204, 87%, 52%);
+}
+
+.discord * {
+  fill: #5865f2;
+}

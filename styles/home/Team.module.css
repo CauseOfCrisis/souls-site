@@ -1,0 +1,96 @@
+.container {
+
+}
+
+.heading {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 0 0 2.5rem;
+}
+
+.members {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: min(100%, 800px);
+}
+
+.member {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.member * {
+    margin: 0;
+}
+
+.pfp {
+    border-radius: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    aspect-ratio: 1;
+    margin: 0 0 .2rem 0;
+}
+
+.pfpImage {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.name {
+    margin: 0 0 .2rem 0;
+}
+
+.role {
+    margin: 0 0 .5rem 0;
+    font-weight: 200;
+}
+
+.handle {
+    display: flex;
+    align-items: center;
+    color: hsl(204,87%,52%);
+    font-size: .65rem;
+}
+
+.handle svg {
+    height: .65rem;
+    margin: 0 .25rem 0 0;
+    width: fit-content;
+}
+
+.minnow {
+    background-color: var(--minnow-theme
+    )
+}
+
+.chath {
+    background-color: var(--chath-theme)
+}
+
+.QuarterChap{
+    background-color: var(--quarterchap-theme);
+}
+
+.handle * {
+    fill: hsl(204,87%,52%);
+}
+
+@media screen and (max-width: 750px) {
+    .members {
+        flex-direction: column;
+    }
+    .member {
+        width: min(100%, 250px);
+        margin-bottom: 3rem;
+    }
+}

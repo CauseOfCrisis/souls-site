@@ -1,0 +1,84 @@
+.container {
+  --vid-size: 60vw;
+  --vid-offset: 20%;
+
+  position: relative;
+  width: 100%;
+  height: calc(100vh + var(--vid-size) * 6/19);
+  background: #000000;
+  margin: 0 0 calc(var(--vid-size) * .4) 0
+}
+
+.uiContainer {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.scene {
+  width: 100%;
+  height: 100%;
+}
+
+.description {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  top: 49%;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.logoContainer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 100vh;
+  transform: translate(0, calc(-100% - 1rem));
+  width: 7rem;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.arrow {
+  width: 1rem;
+  height: 1rem;
+  margin: auto;
+}
+
+.soul {
+  width: 38vw;
+  height: 38vw;
+  position: absolute;
+  bottom: calc( -8%);
+  left: -7.3vw;
+}
+
+.container video {
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  transform: translate(0, -58%);
+  border-radius: 15px;
+  width: var(--vid-size);
+}
+
+@media screen and (max-aspect-ratio: 11/10) {
+  .soul {
+    display: none;
+  }
+
+  .container {
+    --vid-size: 80vw;
+  }
+
+  .description {
+    font-size: .7rem;
+  }
+}

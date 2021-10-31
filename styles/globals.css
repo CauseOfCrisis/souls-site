@@ -1,9 +1,22 @@
+:root {
+  --bg-primary: #ffffff;
+  --txt-primary: #000000;
+
+  --txt-secondary: #ffffff;
+
+  --minnow-theme: #48c3da;
+  --chath-theme: #85e75e;
+  --quarterchap-theme:#f29f37;
+}
+
 html,
 body {
   padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin: 0 !important;
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: var(--txt-primary);
+  font-size: 22px;
 }
 
 a {
@@ -11,6 +24,28 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 * {
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Poppins;
+}
+
+#hook p,
+#hook a,
+#hook h1,
+#hook h2,
+#hook h3 {
+  color: var(--txt-secondary);
 }
