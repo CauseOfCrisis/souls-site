@@ -1,7 +1,5 @@
 import styles from "@styles/global/Socials.module.css"
 
-import Image from "next/image";
-
 import DiscordIcon from "@components/global/DiscordIcon.js"
 import TwitterIcon from "@components/global/TwitterIcon.js"
 

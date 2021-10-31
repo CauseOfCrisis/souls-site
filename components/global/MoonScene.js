@@ -1,7 +1,5 @@
-import { useRef, useState, Suspense } from "react";
-import { Canvas, useFrame, useLoader } from "@react-three/fiber";
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import {useGLTF} from '@react-three/drei';
+import { useRef } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
 const Moon = () => {
@@ -13,11 +11,10 @@ const Moon = () => {
 
   useFrame((state, delta) => {
     mesh.current.rotation.y += 0.1 * delta;
-
   });
 
   return (
-    <mesh ref={mesh} position={[0,1.2,0]}>
+    <mesh ref={mesh} position={[0, 1.2, 0]}>
       <sphereGeometry />
       <meshStandardMaterial map={moonTex} normalMap={normalTex} />
     </mesh>
@@ -50,7 +47,7 @@ const Stars = ({ num, dist }) => {
       {Array(num)
         .fill()
         .map((__, i) => (
-          <Star pos={ranPos()} key={i}/>
+          <Star pos={ranPos()} key={i} />
         ))}
     </group>
   );
@@ -59,8 +56,8 @@ const Stars = ({ num, dist }) => {
 const Scene = () => {
   return (
     <Canvas>
-      <ambientLight intensity={.06}/>
-      <pointLight position={[-1, .7, 1.3]} intensity={1}/>
+      <ambientLight intensity={0.06} />
+      <pointLight position={[-1, 0.7, 1.3]} intensity={1} />
       <Moon />
       <Stars num={300} dist={150} />
     </Canvas>
