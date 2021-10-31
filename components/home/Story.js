@@ -1,13 +1,5 @@
 import styles from "@styles/home/Story.module.css";
 
-import Image from "next/image";
-
-import chath from "@public/chath.png";
-import minnow from "@public/minnow.png";
-import quarterchap from "@public/quarterchap.png";
-
-import krillin from "@public/krillin.png";
-
 //Ok let's think on how this is going to work...
 //Constant size, then the margin around adjusts.
 
@@ -44,7 +36,7 @@ const Story = () => {
         </div>
         <div className={styles.honorary}>
           <div className={styles.honoraryImg}>
-            <Image src={quarterchap} />
+          <img src="quarterchap.png"/>
           </div>
         </div>
       </div>
@@ -52,7 +44,8 @@ const Story = () => {
       <div className={`${styles.dutyCalls} ${styles.chapter}`}>
         <div className={styles.honorary}>
           <div className={styles.honoraryImg}>
-            <Image src={chath} />
+            {/*<Image src={chath} /> */}
+            <img src="chath.png"/>
           </div>
         </div>
         <div className={styles.content}>
@@ -69,7 +62,7 @@ const Story = () => {
             work, the chemistry was unmatched. By the end of the night we had our first soul.
           </p>
           <div className={styles.krillin}>
-            <Image src={krillin} />
+          <img src="krillin.png"/>
           </div>
           <p>
             In retrospect I don't know what the hell we were thinking, but in that moment
@@ -90,7 +83,7 @@ const Story = () => {
         </div>
         <div className={styles.honorary}>
           <div className={styles.honoraryImg}>
-            <Image src={minnow} />
+          <img src="minnow.png"/>
           </div>
         </div>
       </div>

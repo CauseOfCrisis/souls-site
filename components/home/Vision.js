@@ -1,9 +1,5 @@
 import styles from "@styles/home/Vision.module.css";
 
-import cyborgImg from "@public/cyborg.png";
-
-import Image from "next/image";
-
 const Vision = () => {
   return (
     <div className={styles.container}>
@@ -12,7 +8,7 @@ const Vision = () => {
           Our Vision
         </h3>
         <div className={styles.icon}>
-          <Image src={cyborgImg} />
+          <img src="cyborg.png"/>
         </div>
       </div>
       <div className={styles.content}>

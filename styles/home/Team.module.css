@@ -94,3 +94,7 @@
         margin-bottom: 3rem;
     }
 }
+
+.container img {
+    width: 100%
+}

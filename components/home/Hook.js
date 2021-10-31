@@ -1,8 +1,5 @@
 import styles from "@styles/home/Hook.module.css";
 
-import Image from "next/image";
-
-import soulImg from "@public/souls.png";
 
 import Header from "@components/global/Header.js";
 import MoonScene from "@components/global/MoonScene.js";
@@ -52,7 +49,7 @@ const Hook = () => {
 
     <div className={styles.soul}>
 
-      <Image src={soulImg} layout="fill" objectFit="contain" objectPosition="50% botom" priority />
+      { /*<Image src={soulImg} layout="fill" objectFit="contain" objectPosition="50% botom" priority /> */}
     </div>
 
       <video width="70%" controls>

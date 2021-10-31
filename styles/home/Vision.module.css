@@ -26,6 +26,10 @@
     right: -60%;
 }
 
+.container img {
+    width: 100%
+}
+
 .content {
     width: min(100%, 950px);
     text-align: center;

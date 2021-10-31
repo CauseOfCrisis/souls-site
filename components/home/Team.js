@@ -1,12 +1,5 @@
 import styles from "@styles/home/Team.module.css";
 
-import twitterIcon from "@public/twitter.png";
-import minnow from "@public/minnow.png";
-import chath from "@public/chath.png";
-import quarterchap from "@public/quarterchap.png";
-
-import Image from "next/image";
-
 import TwitterIcon from "@components/global/TwitterIcon.js";
 
 const Member = ({ img, name, handle, role, twitter }) => {
@@ -14,7 +7,7 @@ const Member = ({ img, name, handle, role, twitter }) => {
     <div className={styles.member}>
       <div className={`${styles.pfp} ${styles[name]}`}>
         <div className={styles.pfpImage}>
-          <Image src={img} />
+        <img src={img}/>
         </div>
       </div>
       <h5 className={styles.name}>{name}</h5>
@@ -34,21 +27,21 @@ const Team = () => {
       <div className={styles.members}>
         <Member
           name="chath"
-          img={chath}
+          img="chath.png"
           handle="@crypto_chath"
           role="Artist"
           twitter="https://twitter.com/crypto_chath"
         />
         <Member
           name="minnow"
-          img={minnow}
+          img="minnow.png"
           handle="@CryptoMinnows"
           role="Project Manager"
           twitter="https://twitter.com/CryptoMinnows"
         />
         <Member
           name="QuarterChap"
-          img={quarterchap}
+          img="quarterchap.png"
           handle="@QuarterChap"
           role="Destitute"
           twitter="https://twitter.com/QuarterChap"

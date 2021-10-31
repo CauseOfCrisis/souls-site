@@ -2,9 +2,13 @@
     padding: 0 10%;
 }
 
+.container img {
+    width: 100%;
+}
+
 .header {
     text-align: center;
-    font-size: 4rem;
+font-size: 4rem;
     margin: 0 0 5rem 0;
 }
 

@@ -1,8 +1,6 @@
 import styles from "@styles/home/Roadmap.module.css";
 
-import sign from "@public/sign.png";
 
-import Image from "next/image";
 
 import Space from "@components/global/Space.js";
 
