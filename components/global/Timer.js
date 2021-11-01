@@ -6,10 +6,16 @@ const Timer = () => {
   const endDate = new Date("November 1, 2021").getTime() - 25200000;
   let distance;
 
+  let datePassed = false;
+
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
+
+  const clickHandle = () => {
+    document.location.href = "https://spookysoulsmint.com/"
+  }
 
   setInterval(() => {
     distance = endDate - Date.now();
@@ -21,7 +27,8 @@ const Timer = () => {
 
   return (
     <p className={styles.timer}>
-      MINTING SOON
+      {/*{days}:{hours}:{minutes}:{seconds}*/}
+      {!datePassed && <button onClick={clickHandle} className={styles.mintButton}>Mint</button>}
     </p>
   );
 };
