@@ -8,12 +8,18 @@ const Vision = () => {
           Our Vision
         </h3>
         <div className={styles.icon}>
-          <img src="cyborg.png"/>
+          <img src="cyborg.png" />
         </div>
       </div>
       <div className={styles.content}>
         <p>
-          This project has evolved well beyond "becoming millionaires". The journey has been the most valuable thing that's ever happened for us. The people we've met have been extremely inspiring, and building that circle and creating lasting relationships is so much much more important than material wealth. This collection will serve as the foundation for the future, as we continue to get involved in this space and keep building.
+          This project has evolved well beyond "becoming millionaires". The
+          journey has been the most valuable thing that's ever happened for us.
+          The people we've met have been extremely inspiring, and building that
+          circle and creating lasting relationships is so much much more
+          important than material wealth. This collection will serve as the
+          foundation for the future, as we continue to get involved in this
+          space and keep building.
         </p>
       </div>
     </div>

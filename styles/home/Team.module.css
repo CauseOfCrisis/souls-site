@@ -57,6 +57,7 @@
 .handle {
   display: flex;
   align-items: center;
+  justify-content: center;
   color: hsl(204, 87%, 52%);
   font-size: 0.65rem;
 }
@@ -81,6 +82,15 @@
 
 .handle * {
   fill: hsl(204, 87%, 52%);
+}
+
+.handle p {
+    margin-left: .3em;
+    margin-right: 0;
+}
+
+.handle svg {
+    margin: 0;
 }
 
 @media screen and (max-width: 750px) {
